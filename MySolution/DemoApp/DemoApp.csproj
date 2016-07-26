@@ -46,6 +46,7 @@
     <Compile Include="Helper.cs" />
     <Compile Include="IInfo.cs" />
     <Compile Include="InfoImpl.cs" />
+    <Compile Include="MyNewClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

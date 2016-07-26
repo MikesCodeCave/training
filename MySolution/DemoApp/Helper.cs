@@ -9,15 +9,15 @@ namespace DemoApp
 {
     class Helper
     {
-        static string[] messages = { "Hello World!", "How are you feeling?", "Its a nice day.", "Cats are cool", "Dogs not so much." };
+        static string[] messages = { "Hello World!", "How are you feeling?", "Its a nice day.", "Cats are cool", "Dogs are even cooler!" };
         static Random r = new Random();
 
         public static void ShowMessages()
         {
-            for (int i = 1; i < 10; i++)
+            for (int i = 1; i < 20; i++)
             {
                 Console.WriteLine(GetRandomMessage());
-                Thread.Sleep(500);
+                Thread.Sleep(100);
             }
         }
 
