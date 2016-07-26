@@ -26,5 +26,14 @@ namespace DemoApp
             int idx = r.Next(0, 5);
             return messages[idx];
         }
+
+        public static void ShowInfo()
+        {
+            IInfo inf = new InfoImpl();
+            Console.WriteLine("Version : " + inf.GetVersion());
+            Console.WriteLine("Date    : " + inf.GetDate());
+            Console.WriteLine("Author  : " + inf.GetAuthor());
+            Console.WriteLine("================================");
+        }
     }
 }

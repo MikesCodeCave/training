@@ -11,6 +11,7 @@ namespace DemoApp
     {
         static void Main(string[] args)
         {
+            Helper.ShowInfo();
             Helper.ShowMessages();
         }
     }
