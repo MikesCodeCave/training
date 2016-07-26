@@ -9,10 +9,22 @@ namespace DemoApp
 {
     class Helper
     {
-        public static void NewMethod()
+        static string[] messages = { "Hello World!", "How are you feeling?", "Its a nice day.", "Cats are cool", "Dogs not so much." };
+        static Random r = new Random();
+
+        public static void ShowMessages()
         {
-            Console.WriteLine("Hello World!");
-            Thread.Sleep(1500);
+            for (int i = 1; i < 10; i++)
+            {
+                Console.WriteLine(GetRandomMessage());
+                Thread.Sleep(500);
+            }
+        }
+
+        private static string GetRandomMessage()
+        {
+            int idx = r.Next(0, 5);
+            return messages[idx];
         }
     }
 }
