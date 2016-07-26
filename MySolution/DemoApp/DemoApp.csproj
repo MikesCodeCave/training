@@ -49,6 +49,7 @@
     <Compile Include="IWorker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkerImpl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
