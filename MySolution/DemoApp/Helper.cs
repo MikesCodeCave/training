@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace DemoApp
 {
-    class Program
+    class Helper
     {
-        static void Main(string[] args)
+        public static void NewMethod()
         {
-            Helper.NewMethod();
+            Console.WriteLine("Hello World!");
+            Thread.Sleep(1500);
         }
     }
 }
